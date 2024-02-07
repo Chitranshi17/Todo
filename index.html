@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    #back-dark {
+      height: auto;
+    }
+
+    @media (max-width : 340px) {
+      html {
+        font-size: 40%;
+      }
+    }
+  </style>
+  <body>
+    <div class="container-fluid" id="back-dark">
+      <nav class="navbar bg-dark">
+        <div class="container-fluid" id="navbar-black">
+          <span
+            class="navbar-brand mb-0 h1 text-light text-center p-3 w-100 shadow-"
+            id="heading-nav"
+            >Todo App</span
+          >
+        </div>
+      </nav>
+
+      <div class="container p-5">
+        <h1 class="text-center fs-1 mb-4">Today's Task</h1>
+
+        <span class="float-end my-5 d-flex">
+          <!-- Dark and Light Mode -->
+          <a href="" class="btn btn-light rounded-0" id="light">Light Mode</a
+          ><a href="" class="btn btn-dark rounded-0" id="dark">Dark Mode</a>
+
+          <!-- Single Dark and Light Button -->
+          <!-- <a href="" class="btn w-75 p-3 fs-5 btn-dark" id="single-btn">Dark</a> -->
+        </span>
+
+        <form action="">
+          <input
+            type="text"
+            class="form-control rounded-0 my-2"
+            placeholder="Enter Your Task"
+            required
+          />
+          <button class="btn btn-success w-100 rounded-0">Save</button>
+        </form>
+
+        <ul class="list-group my-3 overflow-y-scroll">
+          <!-- <li class="list-group-item rounded-0">Some Task <button class="btn btn-danger btn-sm rounded-0 float-end">Delete</button></li> -->
+        </ul>
+
+        <!-- Remove Button -->
+        <a
+          href=""
+          class="btn btn-danger text-light p-1 px-2 border rounded-0"
+          id="removeAll"
+          >Remove</a
+        >
+
+        <!-- <span class="float-end"> -->
+        <!-- Dark and Light Mode -->
+        <!-- <a href="" class="btn btn-light rounded-0" id="light">Light Mode</a><a href="" class="btn btn-dark rounded-0" id="dark">Dark Mode</a> -->
+
+        <!-- Single Dark and Light Button -->
+        <!-- <a href="" class="btn w-75 p-3 fs-5 btn-dark" id="single-btn">Dark</a> -->
+
+        <!-- </span> -->
+      </div>
+
+      <script src="main.js"></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"
+      ></script>
+    </div>
+  </body>
+</html>
